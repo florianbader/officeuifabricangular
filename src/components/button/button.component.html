@@ -1,0 +1,21 @@
+<button *ngIf="href == null || disabled" (click)="click.emit($event)" [ngClass]="classes" type="button" class="ms-Button x-hidden-focus"
+    [disabled]="disabled">
+    <div class="ms-Button-flexContainer">
+        <div class="ms-Button-textContainer">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </div>
+    </div>
+</button>
+
+<a *ngIf="href != null && !disabled" [href]="href" [target]="target" [title]="title" (click)="click.emit($event)" [ngClass]="classes"
+    type="button" class="ms-Button x-hidden-focus">
+    <div class="ms-Button-flexContainer">
+        <div class="ms-Button-textContainer">
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </div>
+    </div>
+</a>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>

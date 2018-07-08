@@ -1,0 +1,52 @@
+.ms-Button {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    min-width: 80px;
+    height: 32px;
+    user-select: none;
+    outline: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+.ms-Button[disabled] {
+    background-color: rgb(244, 244, 244);
+    color: rgb(166, 166, 166);
+    pointer-events: none;
+    user-select: none;
+}
+
+.ms-Button-flexContainer {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-Button-textContainer {
+    flex-grow: 1;
+}
+
+.ms-Button-label {
+    margin-top: 0px;
+    margin-right: 4px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    line-height: 100%;
+    font-weight: 600;
+}

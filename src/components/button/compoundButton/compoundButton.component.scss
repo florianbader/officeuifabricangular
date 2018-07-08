@@ -1,0 +1,35 @@
+.ms-Button.ms-Button--compound {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    max-width: 280px;
+    min-height: 72px;
+    height: auto;
+}
+
+.ms-Button--compound .ms-Button-label {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.ms-Button--compound .ms-Button-flexContainer {
+    align-items: flex-start;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.ms-Button--compound .ms-Button-textContainer {
+    text-align: left;
+}
+
+.ms-Button-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: inherit;
+}

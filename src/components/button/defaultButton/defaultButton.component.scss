@@ -1,0 +1,65 @@
+@import '../button.component.scss'; 
+
+.ms-Button--default {
+    background-color: rgb(244, 244, 244);
+    color: rgb(51, 51, 51);
+}
+
+.ms-Button--default:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+}
+
+.ms-Button--default.ms-Button--checked {
+    background-color: rgb(200, 200, 200);
+    color: rgb(33, 33, 33);
+}
+
+.ms-Button--default.ms-Button--checked:hover {
+    background-color: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+}
+
+.ms-Button--primary {
+    background-color: rgb(0, 120, 212);
+    color: rgb(255, 255, 255);
+}
+
+.ms-Button--primary:hover {
+    background-color: rgb(16, 110, 190);
+    color: rgb(255, 255, 255);
+}
+
+.ms-Button--primary.ms-Button--checked {
+    background-color: rgb(0, 90, 158);
+    color: rgb(255, 255, 255);
+}
+
+.ms-Button--primary.ms-Button--checked:hover {
+    background-color: rgb(0, 120, 212);
+    color: rgb(255, 255, 255);
+}
+
+.ms-Button-icon {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    font-family: FabricMDL2Icons;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-right: 4px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+@font-face {
+    font-family: "FabricMDL2Icons";
+    src: url('https://spoprod-a.akamaihd.net/files/fabric/assets/icons/fabric-icons-a13498cf.woff') format('woff');
+}

@@ -1,0 +1,7 @@
+<of-button [disabled]="disabled" [href]="href" [target]="target" [title]="title" [classes]="{'ms-Button--checked': checked, 'ms-Button--default': !primary, 'ms-Button--primary': primary }">
+    <div class="ms-Button-label">
+        <i class="ms-Button-icon" [ngClass]="iconClass" role="presentation" aria-hidden="true"></i>
+
+        <ng-content></ng-content>
+    </div>
+</of-button>

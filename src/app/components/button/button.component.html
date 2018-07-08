@@ -1,0 +1,26 @@
+<div style="margin-bottom: 10px;">
+    <input type="checkbox" [checked]="disableButtons" (change)="disableButtons = $event.target.checked" /> Disable buttons
+    <input type="checkbox" [checked]="checkButtons" (change)="checkButtons = $event.target.checked" /> Check buttons
+</div>
+
+<div>
+    <of-default-button (click)="click($event)" [disabled]="disableButtons" [checked]="checkButtons">Button</of-default-button>
+    <of-default-button (click)="click($event)" primary="true" [disabled]="disableButtons" [checked]="checkButtons">Button</of-default-button>
+</div>
+
+<div style="margin-top: 20px;">
+    <of-compound-button secondaryText="You can create a new account here." (click)="click($event)" [disabled]="disableButtons"
+        [checked]="checkButtons">Create account</of-compound-button>
+    <of-compound-button secondaryText="You can create a new account here." (click)="click($event)" primary="true" [disabled]="disableButtons"
+        [checked]="checkButtons">Create account</of-compound-button>
+</div>
+
+<div style="margin-top: 20px;">
+    <of-default-button href="https://microsoft.com" [disabled]="disableButtons" [checked]="checkButtons">Button</of-default-button>
+    <of-default-button href="https://microsoft.com" primary="true" [disabled]="disableButtons" [checked]="checkButtons">Button</of-default-button>
+</div>
+
+<div style="margin-top: 20px;">
+    <of-default-button iconName="Emoji2" href="https://microsoft.com" [disabled]="disableButtons" [checked]="checkButtons">Button</of-default-button>
+    <of-default-button iconName="Emoji2" href="https://microsoft.com" primary="true" [disabled]="disableButtons" [checked]="checkButtons">Button</of-default-button>
+</div>

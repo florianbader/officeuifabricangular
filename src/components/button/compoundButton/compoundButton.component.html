@@ -1,0 +1,8 @@
+<of-button [disabled]="disabled" [classes]="{'ms-Button--checked': checked, 'ms-Button--default': !primary, 'ms-Button--primary': primary, 'ms-Button--compound': true }">
+    <div class="ms-Button-label">
+        <ng-content></ng-content>
+    </div>
+    <div class="ms-Button-description">
+        {{ secondaryText }}
+    </div>
+</of-button>
